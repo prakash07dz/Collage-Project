@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 20px;
+    font-size: 16px; /* default font size */
+    font-family: "Lato", sans-serif;
+    color: #161A30;
+}
+
+#title {
+    color: red;
+    font-size: 3rem; /* adjust as needed */
+    text-decoration: underline;
+    font-weight: 900;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Roboto Slab", serif;
+    font-weight: 800;
+    margin: 25px 0;
+    font-size: 2.5rem; /* adjust as needed */
+    border-top: 1px solid rgb(207, 201, 201);
+}
+
+p {
+    margin-left: 20px;
+}
+
+span {
+    font-weight: 700;
+}
+
+h2 {
+    font-family: "Roboto Slab", serif;
+    font-weight: 500;
+    margin: 20px 0;
+    font-size: 2rem; /* adjust as needed */
+}
+
+.flex-box {
+    display: flex;
+    flex-wrap: wrap; /* allow flex items to wrap */
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+ul {
+    margin: 20px 0;
+    padding: 0;
+    list-style-type: square;
+}
+
+ul li {
+    margin: 10px 20px;
+}
+
+img {
+    max-width: 100%; /* make images responsive */
+    height: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        font-size: 16px;
+    }
+    #title {
+        font-size: 2.5rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+}
+@media (max-width: 425px) {
+    .container {
+        font-size: 16px;
+    }
+    #title {
+        font-size: 2rem;
+        margin-top: 10px;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    p {
+        margin-left: 10px;
+    }
+    ul li {
+        margin: 10px;
+    }
+}
